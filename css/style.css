@@ -1,1 +1,53 @@
+.full-bg{
+    background-color: #e3e3e3;
+}
 
+img{
+    max-width: 100%;
+}
+
+figure{
+    position: relative;
+}
+
+.left-side figure div{
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+
+.skill{
+ position: relative;
+ height: 5px;
+ border-radius: 3px;
+ background: #ccc;
+}
+
+.skill .achievement{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 5px;
+    width: 20%;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.skill .achievement span{
+    position: absolute;
+    right: -7px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+    top: -4.5px;
+    display: inline-block;
+}
+
+.decoration-none a{
+    text-decoration: none !important;
+}
+
+.fa{
+    font-size: 32px;
+}
