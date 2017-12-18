@@ -1,3 +1,7 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
 .full-bg{
     background-color: #e3e3e3;
 }
@@ -17,10 +21,10 @@ figure{
 }
 
 .skill{
- position: relative;
- height: 5px;
- border-radius: 3px;
- background: #ccc;
+    position: relative;
+    height: 5px;
+    border-radius: 3px;
+    background: #ccc;
 }
 
 .skill .achievement{
@@ -44,10 +48,88 @@ figure{
     display: inline-block;
 }
 
-.decoration-none a{
+.decoration-none{
     text-decoration: none !important;
+    color: inherit;
 }
 
 .fa{
     font-size: 32px;
+}
+
+.left-side aside{
+    height: 100%;
+}
+
+.left-side a,
+.left-side address{
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.text-grey{
+    color: #d7e6f6;
+}
+
+.right-side .fa{
+    font-size: 2.5rem;
+}
+
+.right-side .fa,
+.right-side h2,
+.right-side p{
+    color: #737373;
+}
+
+.right-side h4{
+    color: #636363;
+    font-size: 1.25rem;
+}
+
+.watch img{
+    width: 30px;
+    height: auto;
+}
+
+.interests figure img{
+    width: 50%;
+    height: 100%;
+}
+
+.box-shadow-blue{
+    box-shadow: 0 0 15px rgba(56, 164, 221, 0.4);
+}
+
+/* Glow */
+.hvr-glow {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+}
+.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background: #1884bc;
+    transition: 0.7s;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
