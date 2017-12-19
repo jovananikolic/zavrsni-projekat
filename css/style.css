@@ -77,7 +77,8 @@ figure{
 
 .right-side .fa,
 .right-side h2,
-.right-side p{
+.right-side p,
+.date-address{
     color: #737373;
 }
 
@@ -103,6 +104,15 @@ figure{
 .box-shadow-blue:hover{
     box-shadow: 0 0 15px rgba(56, 164, 221, 1);
     transition-duration: 0.5s;
+}
+
+/********COVER LETTER********/
+
+.signature{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #636363 !important;
 }
 
 /* Glow */
