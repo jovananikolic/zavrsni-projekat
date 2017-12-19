@@ -1,7 +1,9 @@
 
 @media(min-width:576px){
  
-    
+    .right-side h2{
+        text-align: left !important;
+    }
     
 }
 

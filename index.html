@@ -28,12 +28,28 @@
     <body>
 
         <div class="full-bg">
+            <nav class="menu">
+                <ul class="side-menu list-unstyled">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Letter</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-overlay">
+
+            </div>
             <div class="container">
                 <main>
                     <!--LEFT SIDE Start-->
 
                     <div class="row">
-                        <div class="col-4 left-side">
+                        <div class="col-md-4 left-side">
                             <aside style="background: #38a4dd; color: #fff;">
                                 <figure class="mb-0">
                                     <img src="img/al-rayhan.jpg" alt=""/>
@@ -42,7 +58,12 @@
                                         <p class="h5 text-light">UI &amp; UX Expert</p>
                                     </div>
                                 </figure>
-                                <div class="row no-gutters py-3 hvr-glow">
+                                <div class="toggle-menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="row no-gutters pt-2 py-md-3 hvr-glow">
                                     <div class="col-3 text-center">
                                         <span class="fa fa-user-o"></span>
                                     </div>
@@ -56,7 +77,7 @@
                                         <hr>
                                     </div>
                                 </div>
-                                <div class="row no-gutters py-3 hvr-glow">
+                                <div class="row no-gutters pt-2 py-md-3 hvr-glow">
                                     <div class="col-3 text-center">
                                         <span class="fa fa-phone"></span>
                                     </div>
@@ -68,7 +89,7 @@
                                         <hr>
                                     </div>
                                 </div>
-                                <div class="row no-gutters py-3 hvr-glow">
+                                <div class="row no-gutters pt-2 py-md-3 hvr-glow">
                                     <div class="col-3 text-center">
                                         <span class="fa fa-envelope"></span>
                                     </div>
@@ -80,7 +101,7 @@
                                         <hr>
                                     </div>
                                 </div>
-                                <div class="row no-gutters py-3 hvr-glow">
+                                <div class="row no-gutters pt-2 py-md-3 hvr-glow">
                                     <div class="col-3 text-center">
                                         <span class="fa fa-map"></span>
                                     </div>
@@ -93,7 +114,7 @@
                                         <hr>
                                     </div>
                                 </div>
-                                <div class="row no-gutters py-3 hvr-glow">
+                                <div class="row no-gutters pt-2 py-md-3 hvr-glow">
                                     <div class="col-3 text-center">
                                         <span class="fa fa-list-alt"></span>
                                     </div>
@@ -138,15 +159,15 @@
 
                         <!--RIGHT SIDE Start-->
 
-                        <div class="col-8 right-side">
-                            <article class="bg-white mt-4 mb-5 pt-5 pr-3 pb-4 box-shadow-blue">
+                        <div class="col-md-8 right-side">
+                            <article class="bg-white my-3 mt-md-4 mb-md-5 pt-5 px-4 pl-sm-0 pr-sm-3 pb-4 box-shadow-blue">
                                 <div class="row">
-                                    <div class="col-2 text-center pr-0">
+                                    <div class="col-sm-2 text-center pr-sm-0 pb-3">
                                         <span class="fa fa-check"></span>
                                     </div>
-                                    <div class="col-10 pl-0 pr-0">
-                                        <h2 class="pb-4">Work Experiences</h2>
-                                        <div class="py-2">
+                                    <div class="col-sm-10 pl-0">
+                                        <h2 class="pb-sm-3 pb-md-4 text-center">Work Experiences</h2>
+                                        <div class="py-2 pr-md-3 pr-lg-3">
                                             <h4>UI &amp; WEB DESIGNER <a class="decoration-none" href="#">@Academy</a></h4>
                                             <a class="decoration-none text-primary" href="#">JAN 2013 - DEC 2014</a>
                                             <p class="mb-0">
@@ -156,7 +177,7 @@
                                             </p>
                                         </div>
                                         <hr>
-                                        <div class="py-2">
+                                        <div class="py-2 pr-md-3 pr-lg-3">
                                             <h4>Creative Director <a class="decoration-none" href="#">@DeviserWeb</a></h4>
                                             <a class="decoration-none text-primary" href="#">MAR 2012 - DEC 2013</a>
                                             <p class="mb-0">
@@ -166,8 +187,48 @@
                                             </p>
                                         </div>
                                         <hr>
-                                        <div class="py-2">
+                                        <div class="py-2 pr-md-3 pr-lg-3">
                                             <h4>Graphic Designer <a class="decoration-none" href="#">@CreativeWorld</a></h4>
+                                            <a class="decoration-none text-primary" href="#">JAN 2009 - DEC 2011</a>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur 
+                                                adipiscing elit, sed do eiusmod tempor 
+                                                incididunt ut labore et dolore magna aliqua. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="bg-white my-3 mt-md-4 mb-md-5 pt-5 px-4 pl-sm-0 pr-sm-3 pb-4 box-shadow-blue">
+                                <div class="row">
+                                    <div class="col-sm-2 text-center pr-sm-0 pb-3">
+                                        <span class="fa fa-graduation-cap"></span>
+                                    </div>
+                                    <div class="col-sm-10 pl-0">
+                                        <h2 class="pb-sm-3 pb-md-4 text-center">Education</h2>
+                                        <div class="py-2 pr-md-3 pr-lg-3">
+                                            <h4>Art &amp; Multimedia <a class="decoration-none" href="#">@Lorem</a> University</h4>
+                                            <a class="decoration-none text-primary" href="#">JAN 2013 - DEC 2014</a>
+                                            <p class="mb-0">
+                                                Lorem ipsum dolor sit amet, consectetur 
+                                                adipiscing elit, sed do eiusmod tempor 
+                                                incididunt ut labore et dolore magna aliqua. 
+                                            </p>
+                                        </div>
+                                        <hr>
+                                        <div class="py-2 pr-md-3 pr-lg-3">
+                                            <h4>Post Graduate <a class="decoration-none" href="#">@Lorem</a> High School</h4>
+                                            <a class="decoration-none text-primary" href="#">MAR 2012 - DEC 2013</a>
+                                            <p class="mb-0">
+                                                Lorem ipsum dolor sit amet, consectetur 
+                                                adipiscing elit, sed do eiusmod tempor 
+                                                incididunt ut labore et dolore magna aliqua. 
+                                            </p>
+                                        </div>
+                                        <hr>
+                                        <div class="py-2 pr-md-3 pr-lg-3">
+                                            <h4>TTMP Degree <a class="decoration-none" href="#">@Creative</a> School</h4>
                                             <a class="decoration-none text-primary" href="#">JAN 2009 - DEC 2011</a>
                                             <p>
                                                 Lorem ipsum dolor sit amet, consectetur 
@@ -181,54 +242,14 @@
 
                             <article class="bg-white mt-4 mb-5 pt-5 pr-3 pb-4 box-shadow-blue">
                                 <div class="row">
-                                    <div class="col-2 text-center pr-0">
-                                        <span class="fa fa-graduation-cap"></span>
-                                    </div>
-                                    <div class="col-10 pl-0 pr-0">
-                                        <h2 class="pb-4">Education</h2>
-                                        <div class="py-2">
-                                            <h4>Art &amp; Multimedia <a class="decoration-none" href="#">@Lorem</a> University</h4>
-                                            <a class="decoration-none text-primary" href="#">JAN 2013 - DEC 2014</a>
-                                            <p class="mb-0">
-                                                Lorem ipsum dolor sit amet, consectetur 
-                                                adipiscing elit, sed do eiusmod tempor 
-                                                incididunt ut labore et dolore magna aliqua. 
-                                            </p>
-                                        </div>
-                                        <hr>
-                                        <div class="py-2">
-                                            <h4>Post Graduate <a class="decoration-none" href="#">@Lorem</a> High School</h4>
-                                            <a class="decoration-none text-primary" href="#">MAR 2012 - DEC 2013</a>
-                                            <p class="mb-0">
-                                                Lorem ipsum dolor sit amet, consectetur 
-                                                adipiscing elit, sed do eiusmod tempor 
-                                                incididunt ut labore et dolore magna aliqua. 
-                                            </p>
-                                        </div>
-                                        <hr>
-                                        <div class="py-2">
-                                            <h4>TTMP Degree <a class="decoration-none" href="#">@Creative</a> School</h4>
-                                            <a class="decoration-none text-primary" href="#">JAN 2009 - DEC 2011</a>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur 
-                                                adipiscing elit, sed do eiusmod tempor 
-                                                incididunt ut labore et dolore magna aliqua. 
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            
-                            <article class="bg-white mt-4 mb-5 pt-5 pr-3 pb-4 box-shadow-blue">
-                                <div class="row">
-                                    <div class="col-2 text-center pr-0">
+                                    <div class="col-sm-2 text-center pr-0">
                                         <figure class="watch">
                                             <img src="img/watch.png" alt=""/>
                                         </figure>
                                     </div>
-                                    <div class="col-10">
+                                    <div class="col-sm-10">
                                         <h2 class="pb-4">Interests</h2>
-                                        <div class="d-flex justify-content-between interests">
+                                        <div class="d-flex justify-content-between interests pl-4">
                                             <figure>
                                                 <img class="img-fluid" src="img/guitar.png" alt=""/>
                                             </figure>
@@ -248,17 +269,21 @@
                                     </div>
                                 </div>
                             </article>
-                            
+
                             <article class="bg-white mt-4 mb-5 pt-4 pr-3 pb-4 box-shadow-blue text-center">
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-sm-6 pb-2 pb-sm-0">
                                         <a class="decoration-none text-primary" href="#">www.alrayhan.com</a>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-sm-6">
                                         <a class="decoration-none text-primary" href="#">dribbble.com/rtralrayhan</a>
                                     </div>
                                 </div>
                             </article>
+
+                            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                            <div class="addthis_inline_share_toolbox"></div>
+
                         </div><!--RIGHT SIDE Ends-->
 
                     </div>
@@ -272,6 +297,8 @@
         <script src="js/jquery.min.js" type="text/javascript"></script>
         <script src="js/poper.js" type="text/javascript"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a391e19dfcfeed9"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js" type="text/javascript"></script>
     </body>
