@@ -1,29 +1,51 @@
 
 @media(min-width:576px){
- 
+
     .right-side h2{
         text-align: left !important;
     }
-    
+
 }
 
 @media(min-width:768px){
- 
+
+    .left-side a,
+    .left-side address{
+        font-size: 1rem;
+    }
     
+    .left-side h3{
+        font-size: 1.5rem;
+    }
     
+    .left-side .fadeInDown h1{
+        font-size: 2rem;
+    }
+
 }
 
 
 
 
 @media(min-width:992px){
-   
+
+    .left-side a,
+    .left-side address{
+        font-size: 1.25rem;
+    }
     
+    .left-side h3{
+        font-size: 1.5rem;
+    }
     
+    .left-side .fadeInDown h1{
+        font-size: 2.5rem;
+    }
+
 }
 
 @media(min-width:1200px){
-   
-    
-    
+
+
+
 }
