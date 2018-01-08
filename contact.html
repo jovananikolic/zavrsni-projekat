@@ -227,17 +227,20 @@
                                     </div>
                                     <div class="col-sm-10 pl-0 pr-0 pr-sm-4 contact">
                                         <h2 class="pb-sm-3 pb-md-4 text-center">Contact</h2>
-                                        <form>
+                                        <form method="post" action="" class="contact-form">
                                             <div class="form-group">
-                                        <input class="mb-4 form-control" type="text" name="name" value="" placeholder="Name*">
+                                                <input class="mb-4 form-control" type="text" name="name" value="" placeholder="Name*">
+                                                <div class="error"></div>
                                             </div>
                                             <div class="form-group">
                                                 <input class="mb-4 form-control" type="email" name="email" value="" placeholder="Email*">
+                                                <div class="error"></div>
                                             </div>
                                             <div class="form-group">
                                                 <textarea class="mb-4 form-control" name="message" placeholder="Message*"></textarea>
+                                                <div class="error"></div>
                                             </div>
-                                            
+
                                             <button type="submit" class="btn">SUBMIT</button>
                                         </form>
                                     </div>
@@ -274,7 +277,58 @@
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a391e19dfcfeed9"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.validate.min.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+                                    $(document).ready(function () {
+                                        $(function () {
+                                            $(".contact-form").validate({
+                                                highlight: function (element) {
+                                                    $(element).closest('.form-group').addClass("has-danger");
+                                                    $(element).addClass("form-control-danger");
+                                                },
+                                                unhighlight: function (element) {
+                                                    $(element).closest('.form-group').removeClass('has-danger').addClass('has-success');
+                                                    $(element).removeClass('form-control-danger').addClass('form-control-success');
+                                                },
+                                                rules: {
+                                                    name: {
+                                                        required: true,
+                                                        rangelength: [3, 50]
+                                                    },
+                                                    email: {
+                                                        required: true,
+                                                        email: true
+                                                    },
+                                                    message: {
+                                                        required: true,
+                                                        minlength: 5
+                                                    }
+                                                },
+                                                messages: {
+                                                    name: {
+                                                        required: "The *Name field is required!",
+                                                        rangelength: "The *Name must be between 3 and 50 characters!"
+                                                    },
+                                                    email: {
+                                                        required: "The *Email field is required!",
+                                                        email: "Please enter a valid email address!"
+                                                    },
+                                                    message: {
+                                                        required: "The *Message field is required!",
+                                                        minlength: "The *Message must have at least 5 characters!"
+                                                    }
+                                                },
+                                                errorElement: 'p',
+                                                errorPlacement: function (error, element) {
+                                                    error.appendTo($(element).closest('.form-group').find('.error'));
+                                                }
+                                            });
+                                        });
+                                    });
+                                    //Form Validation
+        </script>
     </body>
 
 </html>
