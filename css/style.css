@@ -213,14 +213,23 @@ figure{
     transition-duration: 0.5s;
 }
 
+.food-img{
+    order: 0;
+}
+
+.food-img figure,
+.food-img figure img{
+    height: 100% !important;
+    width: 100% !important;
+}
+
 .card-caption5{
+    order: 1;
     background: #f4be18;
-/*    max-width: 100%;
-    height: 100%;*/
-/*    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;*/
+}
+
+.par1{
+    order: 2;
 }
 
 .box-shadow-orange{

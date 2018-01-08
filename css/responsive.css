@@ -41,11 +41,22 @@
     .left-side .fadeInDown h1{
         font-size: 2.5rem;
     }
-
+    
+    .par1{
+        order: 0;
+    }
+    
+    .card-caption5{
+        order: 1;
+    }
+    
 }
 
 @media(min-width:1200px){
 
-
+    .box-shadow-orange .bg-white,
+    .box-shadow-orange .card-caption5{
+        padding: 2rem !important;
+    }
 
 }
