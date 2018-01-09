@@ -332,3 +332,21 @@ figure{
     font-size: 0.9rem;
     margin-bottom: 10px;
 }
+
+/****************SINGLE PAGE*****************/
+
+.single figure{
+    background-size: cover;
+}
+
+.profilepic{
+    background-size: cover;
+}
+
+.caption h3{
+    font-size: 2rem;
+}
+
+.caption small{
+    font-size: 90%;
+}
