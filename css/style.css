@@ -335,18 +335,10 @@ figure{
 
 /****************SINGLE PAGE*****************/
 
-.single figure{
-    background-size: cover;
-}
-
-.profilepic{
-    background-size: cover;
-}
-
 .caption h3{
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 
-.caption small{
-    font-size: 90%;
+.caption p{
+    font-size: 0.8rem;
 }

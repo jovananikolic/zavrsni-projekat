@@ -180,23 +180,66 @@
                             </article>
 
                             <div class="row">
-                                <div class="col-md-3 pr-md-0 profilepic">
-                                    <figure class="">
-                                        <img src="img/profile-pic1.jpg" alt=""/>
-                                    </figure>
+                                <div class="col-6 col-sm-12">
+                                    <div class="row box-shadow-blue no-gutters mb-4">
+                                        <div class="col-sm-4 col-lg-3 pr-md-0">
+                                            <figure class="mb-0">
+                                                <img src="img/profile-pic1.jpg" alt=""/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-8 col-lg-9 pl-md-0">
+                                            <div class="bg-white p-3 px-md-3 pt-md-3 px-lg-4 py-lg-3 py-xl-4 caption h-100">
+                                                <h3 class="mb-0" style="color: #38a4dd;">Jenny Doe</h3>
+                                                <small><time datetime="2015-02-18 14:56">February 18, 2015 at 2:56 pm</time></small>
+                                                <p class="mb-0 mt-2 mt-xl-3">
+                                                    Lorem ipsum dolor sit amet, consectetur 
+                                                    adipiscing elit, sed do eiusmod tempor incididunt 
+                                                    ut labore et dolore magna aliqua.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-9 pl-md-0">
-                                    <div class="bg-white p-4 caption">
-                                        <h3 class="mb-0">Jenny Doe</h3>
-                                        <small><time datetime="2015-02-18 14:56">February 18, 2015 at 2:56 pm</time></small>
-                                        <p class="mb-0 mt-3">
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit, sed do eiusmod tempor incididunt 
-                                            ut labore et dolore magna aliqua.
-                                        </p>
+                                <div class="col-6 col-sm-12">
+                                    <div class="row box-shadow-blue no-gutters bg-white mb-3 w-85 comment2">
+                                        <div class="col-sm-4 col-lg-3 pr-md-0">
+                                            <figure class="mb-0">
+                                                <img src="img/profile-pic2.png" alt=""/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-8 col-lg-9 pl-md-0">
+                                            <div class="p-3 px-md-3 pt-md-3 px-lg-4 py-lg-3 py-xl-4 caption h-100">
+                                                <h3 class="mb-0" style="color: #38a4dd;">John Doe</h3>
+                                                <small><time datetime="2015-02-18 14:56">February 18, 2015 at 2:56 pm</time></small>
+                                                <p class="mb-0 mt-2 mt-xl-3">
+                                                    Yahoooo, I you did this
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <article class="bg-white box-shadow-blue contact p-3 p-sm-4 p-xl-5 mb-3 mt-sm-3 rounded">
+                                <form method="post" action="" class="contact-form">
+                                    <div class="form-group">
+                                        <input class="mb-4 form-control" type="text" name="name" value="" placeholder="Name*">
+                                        <div class="error"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="mb-4 form-control" type="email" name="email" value="" placeholder="Email*">
+                                        <div class="error"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="mb-4 form-control" name="message" placeholder="Write here*"></textarea>
+                                        <div class="error"></div>
+                                    </div>
+
+                                    <button type="submit" class="btn mb-0">COMMENT</button>
+                                </form>
+                            </article>
+
+
 
                         </div><!--RIGHT SIDE Ends-->
 
@@ -212,7 +255,58 @@
         <script src="js/poper.js" type="text/javascript"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.validate.min.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
+        
+        <script type="text/javascript">
+                                    $(document).ready(function () {
+                                        $(function () {
+                                            $(".contact-form").validate({
+                                                highlight: function (element) {
+                                                    $(element).closest('.form-group').addClass("has-danger");
+                                                    $(element).addClass("form-control-danger");
+                                                },
+                                                unhighlight: function (element) {
+                                                    $(element).closest('.form-group').removeClass('has-danger').addClass('has-success');
+                                                    $(element).removeClass('form-control-danger').addClass('form-control-success');
+                                                },
+                                                rules: {
+                                                    name: {
+                                                        required: true,
+                                                        rangelength: [3, 50]
+                                                    },
+                                                    email: {
+                                                        required: true,
+                                                        email: true
+                                                    },
+                                                    message: {
+                                                        required: true,
+                                                        minlength: 5
+                                                    }
+                                                },
+                                                messages: {
+                                                    name: {
+                                                        required: "The *Name field is required!",
+                                                        rangelength: "The *Name must be between 3 and 50 characters!"
+                                                    },
+                                                    email: {
+                                                        required: "The *Email field is required!",
+                                                        email: "Please enter a valid email address!"
+                                                    },
+                                                    message: {
+                                                        required: "The *Comment field is required!",
+                                                        minlength: "The *Comment must have at least 5 characters!"
+                                                    }
+                                                },
+                                                errorElement: 'p',
+                                                errorPlacement: function (error, element) {
+                                                    error.appendTo($(element).closest('.form-group').find('.error'));
+                                                }
+                                            });
+                                        });
+                                    });
+                                    //Form Validation
+        </script>
     </body>
 
 </html>
