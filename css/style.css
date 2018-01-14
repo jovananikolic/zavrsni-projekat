@@ -343,29 +343,45 @@ figure{
     font-size: 0.8rem;
 }
 
-.portfolio-project figure{
-    overflow: hidden;
+.gallery .gallery-pic{
     position: relative;
 }
 
-.portfolio-project a img{
+.gallery figure{
+    overflow: hidden;
+}
+
+.gallery a img{
     transition: 1s linear;
 }
 
-.portfolio-project a:hover img{
+.gallery a:hover img{
     transform: scale(1.1);
 }
 
-.portfolio-hover{
+.gallery-hover{
     position: absolute;
-    display: none;
-}
-
-.portfolio-project a:hover .portfolio-hover{
-    display: block;
-    transition: 1s linear;
-    background-color: rgba(83, 91, 130, 0.7);
     top: 0;
     left: 0;
-    bottom: 5.5%;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(83, 91, 130, 0.7);
+    padding: 5px 10px;
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    color: #fff !important;
 }
+
+.gallery a:hover .gallery-hover{
+    opacity: 1;
+}
+
+/*.gallery a:hover .gallery-hover{
+    display: block;
+    overflow: hidden;
+    transition: 1s linear;
+
+    bottom: 5.5%;
+}*/
