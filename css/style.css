@@ -343,7 +343,7 @@ figure{
     font-size: 0.8rem;
 }
 
-.gallery .gallery-pic{
+.gallery article{
     position: relative;
 }
 
@@ -371,17 +371,9 @@ figure{
     transition: 0.3s linear;
     -webkit-transition: 0.3s linear;
     -moz-transition: 0.3s linear;
-    color: #fff !important;
 }
 
 .gallery a:hover .gallery-hover{
     opacity: 1;
 }
 
-/*.gallery a:hover .gallery-hover{
-    display: block;
-    overflow: hidden;
-    transition: 1s linear;
-
-    bottom: 5.5%;
-}*/
